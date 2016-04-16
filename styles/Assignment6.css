@@ -1,0 +1,8 @@
+table, th, td {
+    border: 1px solid black;
+}
+.CID{font-style: italic;color: red;}
+
+section.section1 {background-color: #FFFFCC; visibility: hidden; position: fixed;text-align: center;height: 100%;}
+section.section2 {background-color: #DCDCDC; visibility: hidden;position: fixed; text-align: center;height: 100%;}
+section.section3 {background-color: #DCDCDC; visibility: hidden;position: fixed; text-align: center;height: 100%;}

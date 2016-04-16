@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 6 - Mazen Albaiz</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+    <script src="js/Assignment6.js"></script>
+</head>
+<body>
+    <h1>Assignment6</h1> 
+    <hr>
+    <section id="title">
+				<select onchange="MenuChoice()" id="menu">
+					<option>Please select an option</option>
+					<option>Add a customer</option>
+                    <option>Change ship to address</option>
+                    <option>Delete a custmoer</option>
+				</select>
+	</section>
+    <section id="section1" class="section1">
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th><label>Please Enter a Customer ID: </label></th>
+                <th><input type="text" id="customerId"></th>
+                <th><label class="CID"> The customer ID should be 5 uppercase text characters.</label></th>
+            </tr>
+            <tr>
+                <th><label>Pleaes enter the Customer Name: </label></th>
+                <th><input type="text" id="customerName"></th>
+            </tr>
+            <tr>
+                <th><label>Pleaes enter the Customer City: </label></th>
+                <th><input type="text" id="customerCity"></th>
+            </tr>
+            <tr>
+                <tr><th><button onclick="CreateCustomer()" id="newcust">Add a New Customer</button></th></tr>
+            </tr>
+        </table>
+    </section>
+    <section id="section2" class="section2">
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th><label>Please Enter order Number to be modified:</label></th>
+                <th><input type="text" id="orderNumber"></th>
+            </tr>
+            <tr>
+                <th><label>Please enter new ship to name:</label></th>
+                 <th><input type="text" id="shipToName"></th>
+            </tr>
+            <tr>
+                <th><label>Please enter new ship to Street Address:</label></th>
+                 <th><input type="text" id="shipTostreetAddress"></th>
+            </tr>
+            <tr>
+                <th><label>Please enter new ship to City:</label></th>
+                 <th><input type="text" id="shipToCity"></th>
+            </tr>
+            <tr>
+                <th><label>Please enter new ship to Postal Code:</label></th>
+                 <th><input type="text" id="shipToPostalCode"></th>
+            </tr>
+            <tr>
+               <th><button onclick="UpdateOrder()" id="orderUpdate">Update Order Data</button></th>
+            </tr>
+        </table>
+        
+    </section>
+    <section id="section3" class="section3">
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <th><label>Please Enter Customer ID to be Deleted:</label></th>
+                <th><input type="text" id="cusID"></th>
+            </tr>
+            <tr>
+               <th><button onclick="DeleteCustomer()" id="customerdelete">Delete Customer</button></th>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
